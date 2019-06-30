@@ -31,5 +31,5 @@
 5:https://jsfiddle.net/fmLrxkpc/4/
 
 
-7.calculator: 28-06-19    https://jsfiddle.net/pt4wo6b0/1/
+7.calculator: 28-06-19   https://jsfiddle.net/10b92rhk/
 
