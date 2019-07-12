@@ -1,0 +1,64 @@
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+	
+    <input type="radio" id="btn_red" checked="checked" name="radio">Red<br>
+    <input type="radio" id="btn_blue" checked="checked" name="radio">Blue<br>
+    <input type="radio" id="btn_green" checked="checked" name="radio">Green<br><br>
+
+    <input type="text" id="box1"/>
+    <input type="text" id="box2"/>
+    <input type="text" id="box3"/>
+    <input type="text" id="box4"/>
+    <br><br>
+    <button id="btn_click">
+    Click me!
+    </button>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+        	$("#btn_red").click(function(){
+        		$("#btn_click").click(function(){
+        			$("#box1").css({"background-color": "red"});
+        			$("#box2").css({"background-color": "red"});
+        			$("#box3").css({"background-color": "red"});
+        			$("#box4").css({"background-color": "red"});
+        			$("#box1").fadeOut(2000);
+        		})
+        	})
+
+            $("#btn_blue").click(function(){
+        		$("#btn_click").click(function(){
+        			$("#box2").css({"background-color": "blue"});
+        			$("#box3").css({"background-color": "blue"});
+        			$("#box4").css({"background-color": "blue"});
+        			$("#box2").fadeOut(2000);
+        			$("#box3").fadeOut(2000);
+        		})
+        	})
+
+        	$("#btn_green").click(function(){
+        		$("#btn_click").click(function(){
+        			$("#btn_click").slideToggle();
+        		//	$("#box1").fadeIn(2000);
+        		//	$("#box2").fadeIn(2000);
+        		//	$("#box3").fadeIn(2000);
+        			$("#box1").css({"background-color": "green"});
+        			$("#box2").css({"background-color": "green"});
+        			$("#box3").css({"background-color": "green"});
+        			$("#box4").css({"background-color": "green"});
+
+        			
+        		})
+        	})
+
+        })
+    </script>
+    
+
+</body>
+</html>
